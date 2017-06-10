@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>确认订单</title>
+	<link href="http://cdn.bootcss.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" type="text/css" href="csslogin/htmleaf-demo.css"> -->
+	<link href="csslogin/signin.css" rel="stylesheet">
+</head>
+<body>
+	<div class="htmleaf-container">
+		<header class="htmleaf-header">
+			
+		</header>
+		<div class="signin">
+			<div class="signin-head"><img src="imagelogin/test/head_120.png" alt="" class="img-circle"></div>
+			<h3>hi ! 亲爱的 <%= user_name %> </h3>
+			<h3>您订的影院为<%= c_name %>, 电影为<%= f_name %></h3>
+			<!-- <form>
+			<h4 > <a href="success.html">点击此处确认订单</a></h4>
+			</form> -->
+			<form action="/insert_data?id=5" method="post"> 
+          		<input type="submit"  value="点击此处确认订单" /> 
+      		</form> 
+		</div>
+	</div>
+	
+</body>
+</html>
