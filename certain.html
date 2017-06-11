@@ -1,0 +1,608 @@
+<!--[if IE ]><![endif]-->
+<!DOCTYPE html>
+
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg no-smil svgclippaths no-touch" lang="en"><!--<![endif]--><head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+ <title>buying-film-tickets-web-system</title>
+ 
+ <!-- Bootstrap core CSS use 3.x framework :: this is a custom base made with the customizer :: screen shot and .json included  -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+ <!-- Way Better Bootstrap Modals INSTRUCTIONS: https://github.com/jschr/bootstrap-modal/ -->
+ <!-- DEMO:: http://jschr.github.io/bootstrap-modal/bs3.html -->
+<link href="assets/css/bootstrap-modal.css" rel="stylesheet" type="text/css">
+
+ <!-- Google Fonts -->
+ <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,700" rel="stylesheet" type="text/css">
+ <link href="http://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet" type="text/css"> 
+
+ <!-- Wrapper and Supporting Styles -->
+ <link href="assets/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/sidewaze_columns.css" rel="stylesheet" type="text/css">
+ <link href="assets/css/sidewaze_base.css" rel="stylesheet" type="text/css">
+ 
+ <!-- ####### Put your color css last class 'base-color' is only used for demo ######### -->
+ <link class="base-color" href="assets/css/colors/sidewaze_base_color.css" rel="stylesheet" type="text/css">
+ 
+ 
+ <!-- SCRIPTS IN HEAD ============================================== -->
+ 
+ <script src="assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+ 
+ <!--	NOTE:: jquery 2.x does not support IE 8 so version 1.9.1 is used for older versions of IE
+				:: calling jQuery in the head for ajax work if necessary.
+				-->
+ <!--[if gt IE 8]><!-->
+		<script src="assets/js/jquery.min.2.0.3.js"></script>
+		<!--<![endif]-->
+ <!--[if lt IE 9]>
+		<script src="assets/js/1.9.1-jquery.min.js"></script>
+		<![endif]-->
+ 
+ <!-- WINDOWS 8 Phones BUG FIX -->
+ <script src="assets/js/windows-fix.js"></script>
+
+ <!--[if lt IE 9]>
+  <script type="text/javascript" src="assets/js/selectivizr.js"></script>
+<![endif]-->
+
+ 
+<!-- ========= GENERATE CODE AND TOUCH ICONS http://iconifier.net/ =========== -->
+
+
+<link href="assets/switcher/switcher.css" rel="stylesheet" type="text/css"></head>
+
+
+
+
+
+ <!-- Bootstrap core CSS use 3.x framework :: this is a custom base made with the customizer :: screen shot and .json included  -->
+<link href="./bootstrap.min.css" rel="stylesheet" type="text/css">
+
+ <!-- Way Better Bootstrap Modals INSTRUCTIONS: https://github.com/jschr/bootstrap-modal/ -->
+ <!-- DEMO:: http://jschr.github.io/bootstrap-modal/bs3.html -->
+<link href="./bootstrap-modal.css" rel="stylesheet" type="text/css">
+
+ <!-- Google Fonts -->
+ <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,700" rel="stylesheet" type="text/css">
+ <link href="http://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet" type="text/css"> 
+
+ <!-- Wrapper and Supporting Styles -->
+ <link href="./owl.carousel.css" rel="stylesheet" type="text/css">
+  <link href="./sidewaze_columns.css" rel="stylesheet" type="text/css">
+ <link href="./sidewaze_base.css" rel="stylesheet" type="text/css">
+ 
+ <!-- ####### Put your color css last class 'base-color' is only used for demo ######### -->
+ <link class="base-color" href="assets/css/colors/sidewaze_base_color.css" rel="stylesheet" type="text/css">
+ 
+
+
+
+
+
+
+
+<body>
+
+<!-- accessibility skip to nav skip content -->
+<ul class="sr-only" id="top">
+ <li><a title="Skip to navigation" accesskey="n" href="#nav">Skip to Navigation</a></li>
+ <li><a title="Skip to content" accesskey="c" href="#page">Skip to Content</a></li>
+</ul>
+<!--  /.sr-only accessibility-->
+
+
+ <!-- ____________ Navigation Column _______________  -->
+ 
+<div class="nav-col">
+  
+ <nav class="clearfix" id="nav" role="navigation">
+ 
+  <!-- ____________ User Wrapper for login and sign up links _______________  -->
+  <div class="user-wrapper">
+   <p><a class="toggle-login" href="login.html" data-toggle="modal"> <i class="fa fa-sign-in"></i>&nbsp;&nbsp;Login</a> <span class="v-divider"></span> <a class="toggle-signup" href="login.html" data-toggle="modal"> <i class="fa fa-pencil"></i>&nbsp;&nbsp;Sign Up</a> </p>
+  </div>
+  
+ <!-- ____________ Primary Menu _______________  -->
+    <!-- TO KEEP OPEN WHEN ON THAT SECTION add class "active" to the a tag of the parent li 
+    (the one with the .has-children class on it) <li class="has-children"><a href="#" class="active" ... -->
+
+  <ul class="primary-nav">   
+  <!-- <li class="active"><a class="active" href="index.html">主页</a></li>  -->
+   <li><a href="index.html">主页</a></li>
+   
+   
+   <!-- add class .active on li item when the page is current -->
+   <li><a href="film.html">电影</a></li>
+   
+   
+   <li class="active"><a class="active" href="cinema.html">电影院</a></li>
+   
+  <!-- <li class="has-children dcjq-parent-li"><a class="dcjq-parent" href="#">电影院<span class="dcjq-icon"></span></a> <!-- add class .has-children on li item if the li has babies -->
+   <!-- <ul style="display: none;">
+     <li><a href="your-link-here.html">Portfolio Child Link 1</a></li>
+     <li><a href="your-link-here.html">Portfolio Child Link 2</a></li>
+     <li class="has-children dcjq-parent-li"><a class="dcjq-parent" href="#">Portfolio Child w/Child Trigger<span class="dcjq-icon"></span></a>
+      <ul style="display: none;">
+       <li><a href="your-link-here.html">Portfolio Grand Child Link 1</a></li>
+       <li><a href="your-link-here.html">Portfolio Grand Child Link 2</a></li>
+      </ul>
+     </li>
+     <li><a href="your-link-here.html">Portfolio Child Link 3</a></li>
+     <li><a href="your-link-here.html">Portfolio Child Link 4</a></li>
+    </ul>
+   </li>      -->
+ <!--  <li class="has-children dcjq-parent-li"><a class="dcjq-parent" href="#">演员<span class="dcjq-icon"></span></a>
+    <ul style="display: none;">
+     <li><a href="your-link-here.html">Services Child Link 1</a></li>
+     <li><a href="your-link-here.html">Services Child Link 2</a></li>
+     <li class="has-children dcjq-parent-li"><a class="dcjq-parent" href="#">Services Child w/Child Trigger<span class="dcjq-icon"></span></a>
+      <ul style="display: none;">
+       <li><a href="your-link-here.html">Services Grand Child Link 1</a></li>
+       <li><a href="your-link-here.html">Services Grand Child Link 2</a></li>
+      </ul>
+     </li>
+     <li><a href="your-link-here.html">Services Child Link 3</a></li>
+     <li><a href="your-link-here.html">Services Child Link 4</a></li>
+    </ul>
+   </li>   -->
+   <li><a href="help.html">帮助</a></li>
+  <!-- <li><a href="your-link-here.html">Bootstrap</a></li>   -->
+  </ul>
+ </nav>
+</div>
+<!-- /.nav-col --> 
+
+
+<!-- ____________ Logo Column (search and social follow) _______________  -->
+ 
+<div class="logo-col">
+ <a class="toggle-menu" href="#"><i class="fa fa-bars"></i></a> 
+ 
+ <!-- ____________ LOGO _______________  -->
+ <div class="logo-wrapper">
+  <a class="clearfix" href="#"> <img id="logo" alt="company name" src="./images/bugkiller-logo1.PNG"> </a>
+ </div>
+ <!-- /logo-wrapper -->
+
+  <!-- ____________ SEARCH WRAPPER _______________  -->
+ <div class="search-wrapper">
+  <a title="" class="toggle-search tooltip-hover" href="#" data-original-title="search" data-placement="left"><i class="fa fa-search"></i></a> 
+  
+  <!--  SEARCH PANEL -->
+  <div class="search-panel">
+   <form role="form">
+    <input class="form-control" type="search" placeholder="Enter search term and press enter">
+   </form>
+  </div> 
+ </div>
+ <!-- /search-wrapper -->
+
+
+  <!-- ____________ SOCIAL WRAPPER _______________  -->
+ <div class="social-wrapper">
+  <ul>
+   <li><a title="" class="fa fa-facebook tooltip-hover" href="#" data-original-title="Follow Us on Facebook" data-placement="left"></a></li>
+   <li><a title="" class="fa fa-google-plus tooltip-hover" href="#" data-original-title="Follow Us on Google Plus" data-placement="left"></a></li>
+   <li><a title="" class="fa fa-twitter tooltip-hover" href="#" data-original-title="Follow Us on Twitter" data-placement="left"></a></li>
+   <li><a title="" class="fa fa-github tooltip-hover" href="#" data-original-title="Visit our GitHub Page" data-placement="left"></a></li>
+   <li><a title="" class="fa fa-linkedin tooltip-hover" href="#" data-original-title="Follow Us on LinkedIn" data-placement="left"></a></li>
+   <li><a title="" class="fa fa-instagram tooltip-hover" href="#" data-original-title="Follow Us on Instagram" data-placement="left"></a></li>
+   <li><a title="" class="fa fa-rss tooltip-hover" href="#" data-original-title="Subscribe to Our RSS Feed" data-placement="left"></a></li>
+  </ul>
+  <!-- .social -->
+ </div>
+</div>
+<!-- /.logo-col --> 
+
+
+
+<!-- ____________ CONTENT COLUMN _______________  -->
+
+<div class="content-col" id="page">
+
+ <div class="inner-content"> <!-- DO NOT USE .container or .container-fluid with this framework -->
+
+ 
+ <!-- _________ BEGIN .multi-item-slider // http://www.owlgraphic.com/owlcarousel/index.html#demo // lazy loading ___________ -->
+ 
+ <div class="multi-slider owl-carousel clearfix owl-theme" style="display: block; opacity: 1;">
+  <div class="owl-wrapper-outer">
+  
+  
+  
+  <!--<div class="owl-wrapper" style="left: 0px; width: 3632px; display: block;"><div class="owl-item" style="width: 227px;"><figure class="item"> <img class="lazyOwl" style="display: block;" alt="Feature 1" src="assets/demo-images/113569013.jpg">
+   <figcaption>credit: <a href="http://www.flickr.com/photos/dannypigart/113569013/">Danny PiG</a> via <a href="http://photopin.com">photopin</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">cc</a></figcaption>
+  </figure></div><div class="owl-item" style="width: 227px;"><figure class="item"> <img class="lazyOwl" style="display: block;" alt="Feature 1" src="assets/demo-images/664637664.jpg">
+   <figcaption>credit: <a href="http://www.flickr.com/photos/everydaylifemodern/664637664/">observista</a> via <a href="http://photopin.com">photopin</a> <a href="http://creativecommons.org/licenses/by-nd/2.0/">cc</a></figcaption>
+  </figure></div><div class="owl-item" style="width: 227px;"><figure class="item"> <img class="lazyOwl" style="display: block;" alt="Feature 1" src="assets/demo-images/1383113606.jpg">
+   <figcaption>credit: <a href="http://www.flickr.com/photos/asthmatic/1383113606/">asthmatic</a> via <a href="http://photopin.com">photopin</a> <a href="http://creativecommons.org/licenses/by-nd/2.0/">cc</a></figcaption>
+  </figure></div><div class="owl-item" style="width: 227px;"><figure class="item"> <img class="lazyOwl" style="display: block;" alt="Feature 1" src="assets/demo-images/2033195014.jpg">
+   <figcaption>credit: <a class="text-underline" href="http://www.flickr.com/photos/pagedooley/2033195014/">kevin dooley</a> via <a href="http://photopin.com">photopin</a> <a href="http://creativecommons.org/licenses/by/2.0/">cc</a></figcaption>
+  </figure></div><div class="owl-item loading" style="width: 227px;"><figure class="item"> <img class="lazyOwl" style="display: none;" alt="Feature 1" src="/" data-src="assets/demo-images/2191568652.jpg">
+   <figcaption>credit: <a href="http://www.flickr.com/photos/karenhorton/2191568652/">karen horton</a> via <a href="http://photopin.com">photopin</a> <a href="http://creativecommons.org/licenses/by/2.0/">cc</a></figcaption>
+  </figure></div><div class="owl-item loading" style="width: 227px;"><figure class="item"> <img class="lazyOwl" style="display: none;" alt="Feature 1" src="/" data-src="assets/demo-images/3210096256.jpg">
+   <figcaption>credit: <a href="http://www.flickr.com/photos/ollieolarte/3210096256/">olarte.ollie</a> via <a href="http://photopin.com">photopin</a> <a href="http://creativecommons.org/licenses/by-sa/2.0/">cc</a></figcaption>
+  </figure></div><div class="owl-item loading" style="width: 227px;"><figure class="item"> <img class="lazyOwl" style="display: none;" alt="Feature 1" src="/" data-src="assets/demo-images/4180676190.jpg">
+   <figcaption>credit: <a href="http://www.flickr.com/photos/davefayram/4180676190/">DaveFayram</a> via <a href="http://photopin.com">photopin</a> <a href="http://creativecommons.org/licenses/by/2.0/">cc</a></figcaption>
+  </figure></div><div class="owl-item loading" style="width: 227px;"><figure class="item"> <img class="lazyOwl" style="display: none;" alt="Feature 1" src="/" data-src="assets/demo-images/6995883979.jpg">
+   <figcaption>credit: <a href="http://www.flickr.com/photos/chrispiascik/6995883979/">Chris Piascik</a> via <a href="http://photopin.com">photopin</a> <a href="http://creativecommons.org/licenses/by-nd/2.0/">cc</a></figcaption>
+  </figure></div></div>-->
+  
+  </div>
+  
+  
+  <div class="container-fluid" id="LG">
+	<div class="row-fluid">
+		<div class="span12">
+			<h2>
+                   确定您已经选择电影：龙之战， 已经选择电影院： 万达广州。
+			</h2>
+			<form action="/film?id=film1" method="post"> 
+											<input type="submit" class="big-btn"  value="确定"/> 
+								     </form>
+			
+			
+			
+			
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				
+			<br/><br/><br/>
+		</div>
+	</div>
+</div>
+  
+  
+  
+  
+  
+
+  <!-- CUSTOM banner uses fit-text jQuery -->
+  <div class="banner">
+   <h1 class="display-text">
+ <!--  <span class="line-1" style="font-size: 151.33px;">BUG<em>KILLER</em> GROUP</span>  --> 
+   <span class="line-2" style="font-size: 50px;">-----FILM TICKETS-----</span> 
+   <span class="line-3" style="font-size: 30px;">BUYING system</span>
+   </h1>
+  </div>
+  <!-- /.banner -->
+  
+
+  
+  
+  
+  
+  
+  <h2 class="h1 font-weight-thin">data update in time</h2>
+
+  
+  <div class="row">
+   
+   <!--/.col-* -->
+
+   
+   <!--/.col-* -->
+
+   </div>
+  <!-- /.row -->
+
+  <hr class="vertical-spacer">
+  
+  <div class="row">
+   
+   <!--/.col-* -->
+   
+   <!--/.col-* -->
+   
+   <!--/.col-* -->
+   </div>
+  <!-- /.row -->
+  
+  <hr class="vertical-spacer">
+  <div class="row">
+   <div class="col-ms-5 col-sm-4 col-lg-5">
+    
+    
+      <hr class="vertical-spacer visible-xs"><!-- spacing vertically when stacked-->
+
+   </div>
+   
+  </div>
+  <!-- /.row -->
+  
+ </div>
+ <!--/inner-content -->
+ 
+</div>
+<!--/content-col --> 
+
+
+<!-- ______________ Footer Column :: jQuery to make equal heights from 901px - 1199px ______________ -->
+
+<footer class="footer footer-col clearfix">
+ <div class="footer-content-1" style="height: 279px;">
+  <div class="inner-content">
+   <h5>Contact Us：</h5>
+   
+   <p class="no-margin-bottom">
+   SYSU-SOFTWARE-ENGINEERING<br>
+   BUGKILLER-GROUP<br>
+   <br/><br/>
+   <strong>phone:</strong> <a class="text-underline" href="tel:8888888888">8888888888</a><br>
+   <strong>fax:</strong>1111111111<br>
+   <span class="overflow"><strong>email:</strong> <a class="text-underline" href="mailto:email@SYSU.com">email@SYSU.com</a></span>
+   </p>
+   
+  </div>
+  <!--/.inner-content-->
+ </div>
+ <!--/.footer-col-1 -->
+ 
+ <hr class="divider">
+ 
+ <div class="footer-content-2" style="height: 279px;">
+  <div class="inner-content">
+   <h5>send to you:</h5>
+   <p>Sign up for our newsletter. We won't share your email address.</p><br/><br/>
+   <form action="yourscript.php" method="post">
+    <div class="input-group input-group-sm footer-signup">
+     <input class="form-control" type="email" placeholder="Your@EmailAddress.com">
+     <span class="input-group-btn">
+     <button class="btn btn-primary" type="submit">Sign Up</button>
+     </span> 
+     <!--/.input-group-->
+    </div>
+   </form>
+  </div>
+  <!--/.inner-content-->
+ </div>
+ <!--/.footer-col-2 -->
+ 
+ <hr class="divider">
+ 
+ <div class="footer-content-3" style="height: 279px;">
+  <div class="inner-content">
+   <h5>developer information</h5>
+    <!--<div class="img-widget clearfix">
+        <a href="#"><img alt="" src="../middle/assets/demo-images/florence-341469_150.jpg"></a>
+        <a href="#"><img alt="" src="../middle/assets/demo-images/frankfurt-285607_150.jpg"></a>
+        <a href="#"><img alt="" src="../middle/assets/demo-images/home-22527_150.jpg"></a>
+        <a href="#"><img alt="" src="../middle/assets/demo-images/milwaukee-art-museum-3984_150.jpg"></a>
+        <a href="#"><img alt="" src="../middle/assets/demo-images/reichstag-366201_150.jpg"></a>
+        <a href="#"><img alt="" src="../middle/assets/demo-images/stairs-8443_150.jpg"></a>
+        <a href="#"><img alt="" src="../middle/assets/demo-images/stairs-63747_150.jpg"></a>
+        <a href="#"><img alt="" src="../middle/assets/demo-images/stairs-113610_150.jpg"></a>
+        <a href="#"><img alt="" src="../middle/assets/demo-images/us-capitol-325341_150.jpg"></a>
+        <a href="#"><img alt="" src="../middle/assets/demo-images/vaulted-cellar-247391_150.jpg"></a>
+    </div>-->
+    <!--/.img-widget-->   
+  </div>
+  <!--/.inner-content-->
+ </div>
+ <!--/.footer-col-3 -->
+ 
+ <hr class="divider">
+ <div class="footer-content-4" style="height: 279px;">
+  <div class="inner-content">
+   <h5>friendly-website-link:</h5>
+   <ul class="article-list"> 
+    <li><a href="http://www.wandafilm.com/">wanda-cinema-website</a></li>
+    <li><a href="http://www.jycinema.com/html/default/index.html">Jinyi-Cinemas</a></li>
+    <li><a href="https://dianying.nuomi.com/">baidu-nuomi-films</a></li>
+   <!-- <li><a href="your-link-goes-here.html">My other body is an immortal robot body.</a></li>
+    <li><a href="your-link-goes-here.html">I don't know who they are but they're right behind you</a></li>
+    <li><a href="your-link-goes-here.html">For those about to rock, we salute you </a> </li>  -->
+   </ul>
+  </div>
+  <!--/.inner-content-->
+ </div>
+ <!--/.footer-col-4 -->
+ 
+ <hr class="divider">
+ <div class="inner-content copyright">
+  <p class="small">© Copyright 2014 Christina Arasmo Beymer. 
+   All rights reserved. Please purchase this wrapper so you can use it in your project. 
+   Email <a class="text-underline" href="mailto:christinabeymer@gmail.com">the designer.</a> </p>
+ </div>
+ <!--/.inner-content--> 
+ 
+</footer>
+<!--/footer-col --> 
+
+<!-- ______________ END FOOTER ______________ --> 
+
+<!-- _________ FAUX COLUMNS ________ -->
+
+<div class="faux-col faux-nav-col">
+</div>
+<div class="faux-col faux-logo-col">
+</div>
+<div class="faux-col faux-content-col">
+</div>
+<div class="faux-col faux-footer-col">
+</div>
+
+<!--to top --> 
+<a title="up" id="go-to-top" style="display: none;"> <i class="fa fa-arrow-circle-o-up"></i> </a> 
+
+<!-- this ends the site content and begins the modals for sign up and login --> 
+
+<!-- ____________ LOGIN MODAL _______________  -->
+
+<div tabindex="-1" class="modal fade user-modal" id="login-modal" style="display: none;" data-width="760">
+ 
+ <div class="modal-body">
+  <div class="row">
+   
+   
+   
+   <!-- col-ms-6 non-bootstrap column for 600px - 767px -->
+   <div class="col-sm-6 col-ms-6">
+    <h4 class="title"><span>Sign In</span></h4>
+    <form role="form" action="your-login-script-goes-here.php">
+     <div class="form-group">
+      <input class="form-control" type="email" placeholder="Enter email">
+     </div>
+     <div class="form-group">
+      <input class="form-control" type="password" placeholder="Password">
+     </div>
+     <div class="form-group checkbox small">
+      <label>
+       <input type="checkbox">
+       Remember Me </label>
+     </div>
+     <p class="text-center">
+      <button class="btn btn-default btn-custom" type="submit"><i class="fa fa-lock"></i> Sign in</button>
+     </p>
+    </form>
+   </div>
+   <!-- /col-sm-6 col-ms-6-->
+   
+  </div>
+  <!-- /.row-->
+  
+    <p class="text-center"><a class="text-underline" href="your-link-here.html">Forgot your password?</a> <br>
+     Don't have an account yet? <a class="text-underline" href="#signup-modal" data-toggle="modal" data-dismiss="modal">Sign up</a> </p>
+  
+ </div>
+ <!-- /.modal-body-->
+</div>
+<!-- /.modal #login-modal --> 
+
+<!-- ____________ SIGNUP MODAL _______________  -->
+
+<div tabindex="-1" class="modal fade user-modal" id="signup-modal" style="display: none;" data-width="760">
+ <div class="modal-header">
+  <button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+ </div>
+ <div class="modal-body">
+  <div class="row">
+   
+   <!-- col-ms-6 non-bootstrap column for 600px - 767px -->
+   <div class="col-sm-6  col-ms-6">
+    <h4 class="title"><span>Sign Up with...</span></h4>
+    <ul class="list-unstyled social-user">
+     <li><a title="Signup with Facebook" class="facebook" href="#"><i class="fa fa-facebook"></i><span>Signup with Facebook</span></a></li>
+     <li><a title="Signup with Google Plus" class="google" href="#"><i class="fa fa-google-plus"></i><span>Signup with Google</span></a></li>
+     <li><a title="Signup with Twitter" class="twitter" href="#"><i class="fa fa-twitter"></i><span>Signup with Twitter</span></a></li>
+     <li><a title="Signup with Wordpress" class="wordpress" href="#"><i class="fa fa-wordpress"></i><span>Signup with Wordpress</span></a></li>
+    </ul>
+    <!-- /.social-user -->
+   </div>
+   <!-- /col-sm-6 col-ms-6--> 
+   
+   <!-- col-ms-6 non-bootstrap column for 600px - 767px -->
+   <div class="col-sm-6 col-ms-6">
+    <h4 class="title"><span>Sign Up</span></h4>
+    <form role="form" action="your-registrtation-script-goes-here.php">
+     <div class="form-group">
+      <input class="form-control" type="email" placeholder="Enter email">
+     </div>
+     <div class="form-group">
+      <input class="form-control" type="password" placeholder="Password">
+     </div>
+     <p class="text-center">
+      <button class="btn btn-default btn-custom" type="submit"><i class="fa fa-lock"></i> Register</button>
+     </p>
+    </form>
+   </div>
+   <!-- /col-sm-6 col-ms-6-->
+   
+  </div>
+  <!-- /.row-->
+  
+      <p class="text-center">Already have an account? <a class="text-underline" href="#login-modal" data-toggle="modal" data-dismiss="modal">Login</a></p>
+
+  
+ </div>
+ <!-- /.modal-body-->
+</div>
+<!-- /.modal #signup-modal --> 
+
+
+<!-- _________ FOOTER SCRIPTS ________ --> 
+
+<script src="assets/js/bootstrap.min.js"></script> 
+<script src="assets/js/jquery.sidewaze_base.js"></script> 
+
+<!-- Way Better Bootstrap Modals INSTRUCTIONS: https://github.com/jschr/bootstrap-modal/ --> 
+<!-- DEMO:: http://jschr.github.io/bootstrap-modal/bs3.html --> 
+<script src="assets/js/bootstrap-modalmanager.js"></script> 
+<script src="assets/js/bootstrap-modal.js"></script> 
+
+<!-- Responsive Carousel LEARN IT HERE: http://www.owlgraphic.com/owlcarousel/demos/custom.html--> 
+<script src="assets/owl-carousel/owl.carousel.min.js"></script> 
+<script>
+     $(document).ready(function() {
+        $(".multi-slider").owlCarousel({
+        lazyLoad : true,
+        navigation : false,
+        pagination: true,
+        items : 4, 
+        itemsDesktop : [1400,4],
+        itemsDesktopSmall : [900,3], 
+        itemsTablet: [600,2], 
+        itemsMobile : [320,1]
+    });
+ });
+</script>
+
+
+
+<div id="switcher-wrapper">
+ <div class="toggle">
+  <i class="fa fa-cog fa-spin"></i>
+ </div>
+ <div id="switcher">
+  <section>
+   <h3>Choose A Color Scheme</h3>
+   <div class="colors clearfix">
+    <a title="base" class="reset active" id="base" href="#"><span></span><span></span></a>
+    <a title="Soft Gray" id="soft-gray" href="#"><span></span><span></span></a>
+    <a title="Stone" id="stone" href="#"><span></span><span></span></a>
+    <a title="Blue" id="blue" href="#"><span></span><span></span></a>
+    <a title="Teal" id="teal" href="#"><span></span><span></span></a>
+    <a title="Mustard and Dark Gray" id="mustard-gray" href="#"><span></span><span></span></a>
+    <a title="Salmon and Dark Gray" id="salmon-gray" href="#"><span></span><span></span></a>
+    <a title="Green and Dark Gray" id="green-gray" href="#"><span></span><span></span></a>
+   </div>
+   <p><a title="Reset" class="button color-reset" href="javascript: void(0)">Color Reset</a></p>
+    </section>      
+ </div>
+</div>
+<!--*****************Theme switcher html *********************--> 
+
+<script src="assets/switcher/switcher.js"></script>  
+
+
+<!--<![endif]--> 
+
+<!-- ====== STYLE SWITCHER REMOVE FROM YOUR FINAL SITE ========= --> 
+
+
+
+</body></html>
