@@ -1,0 +1,515 @@
+<!--[if IE ]><![endif]-->
+<!DOCTYPE html>
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg no-smil svgclippaths no-touch" lang="en"><!--<![endif]--><head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+ <title>buying-film-tickets-web-system</title>
+ 
+ <!-- Bootstrap core CSS use 3.x framework :: this is a custom base made with the customizer :: screen shot and .json included  -->
+<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+ <!-- Way Better Bootstrap Modals INSTRUCTIONS: https://github.com/jschr/bootstrap-modal/ -->
+ <!-- DEMO:: http://jschr.github.io/bootstrap-modal/bs3.html -->
+<link href="assets/css/bootstrap-modal.css" rel="stylesheet" type="text/css">
+
+ <!-- Google Fonts -->
+ <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,700" rel="stylesheet" type="text/css">
+ <link href="http://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet" type="text/css"> 
+
+ <!-- Wrapper and Supporting Styles -->
+ <link href="assets/owl-carousel/owl.carousel.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/sidewaze_columns.css" rel="stylesheet" type="text/css">
+ <link href="assets/css/sidewaze_base.css" rel="stylesheet" type="text/css">
+ 
+ <!-- ####### Put your color css last class 'base-color' is only used for demo ######### -->
+ <link class="base-color" href="assets/css/colors/sidewaze_base_color.css" rel="stylesheet" type="text/css">
+ 
+ 
+ <!-- SCRIPTS IN HEAD ============================================== -->
+ 
+ <script src="assets/js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<script src="assets/js/jquery.min.2.0.3.js"></script>
+ <script src="assets/js/windows-fix.js"></script>
+<link href="assets/switcher/switcher.css" rel="stylesheet" type="text/css"></head>
+
+<link href="./bootstrap.min.css" rel="stylesheet" type="text/css">
+
+ <!-- Way Better Bootstrap Modals INSTRUCTIONS: https://github.com/jschr/bootstrap-modal/ -->
+ <!-- DEMO:: http://jschr.github.io/bootstrap-modal/bs3.html -->
+<link href="./bootstrap-modal.css" rel="stylesheet" type="text/css">
+
+ <!-- Google Fonts -->
+ <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,500,700" rel="stylesheet" type="text/css">
+ <link href="http://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet" type="text/css"> 
+
+ <!-- Wrapper and Supporting Styles -->
+ <link href="./owl.carousel.css" rel="stylesheet" type="text/css">
+  <link href="./sidewaze_columns.css" rel="stylesheet" type="text/css">
+ <link href="./sidewaze_base.css" rel="stylesheet" type="text/css">
+ 
+ <!-- ####### Put your color css last class 'base-color' is only used for demo ######### -->
+ <link class="base-color" href="assets/css/colors/sidewaze_base_color.css" rel="stylesheet" type="text/css">
+<body>
+
+<!-- accessibility skip to nav skip content -->
+<ul class="sr-only" id="top">
+ <li><a title="Skip to navigation" accesskey="n" href="#nav">Skip to Navigation</a></li>
+ <li><a title="Skip to content" accesskey="c" href="#page">Skip to Content</a></li>
+</ul>
+<!--  /.sr-only accessibility-->
+
+
+ <!-- ____________ Navigation Column _______________  -->
+ 
+<div class="nav-col">
+  
+ <nav class="clearfix" id="nav" role="navigation" ">
+ 
+  <!-- ____________ User Wrapper for login and sign up links _______________  -->
+  <div class="user-wrapper">
+   <p><a class="toggle-login" href="login.html" data-toggle="modal"> <i class="fa fa-sign-in"></i>&nbsp;&nbsp;Login</a> <span class="v-divider"></span> <a class="toggle-signup" href="login.html" data-toggle="modal"> <i class="fa fa-pencil"></i>&nbsp;&nbsp;Sign Up</a> </p>
+  </div>
+  
+<div class="banner">
+  
+  </div>
+  <ul class="primary-nav">   
+   <li ><a class="active" href="index.html">主页</a></li>
+   <!-- add class .active on li item when the page is current -->
+   <li class="active"><a href="film.html">电影</a></li>
+   <li class="has-children dcjq-parent-li"><a class="dcjq-parent" href="cinema.html">电影院<span class="dcjq-icon"></span></a> <!-- add class .has-children on li item if the li has babies -->
+    <ul style="display: none;">
+     <li><a href="your-link-here.html">Portfolio Child Link 1</a></li>
+     <li><a href="your-link-here.html">Portfolio Child Link 2</a></li>
+     <li class="has-children dcjq-parent-li"><a class="dcjq-parent" href="#">Portfolio Child w/Child Trigger<span class="dcjq-icon"></span></a>
+      <ul style="display: none;">
+       <li><a href="your-link-here.html">Portfolio Grand Child Link 1</a></li>
+       <li><a href="your-link-here.html">Portfolio Grand Child Link 2</a></li>
+      </ul>
+     </li>
+     <li><a href="your-link-here.html">Portfolio Child Link 3</a></li>
+     <li><a href="your-link-here.html">Portfolio Child Link 4</a></li>
+    </ul>
+   </li>
+
+   <li><a href="#bottom">帮助</a></li>
+  <!-- <li><a href="your-link-here.html">Bootstrap</a></li>   -->
+  <li>
+      <form action="/submit_r?id=3" method="post"> 
+          <input type="submit"  value="提交订单" /> 
+      </form> 
+   
+   </li>
+  </ul>
+ </nav>
+</div>
+<div class="logo-col">
+ <a class="toggle-menu" href="#"><i class="fa fa-bars"></i></a> 
+ 
+ <!-- ____________ LOGO _______________  -->
+ <div class="logo-wrapper"><!-- 
+  <a class="clearfix" href="#"> <img id="logo" alt="company name" src="./images/bugkiller-logo1.PNG"> </a> -->
+ </div>
+ <div class="search-wrapper">
+  <a title="" class="toggle-search tooltip-hover" href="#" data-original-title="search" data-placement="left"><i class="fa fa-search"></i></a> 
+  
+  <!--  SEARCH PANEL -->
+  <div class="search-panel">
+   <form role="form">
+    <input class="form-control" type="search" placeholder="Enter search term and press enter">
+   </form>
+  </div> 
+ </div>
+ <div class="social-wrapper">
+  <ul>
+   <li><a title="" class="fa fa-facebook tooltip-hover" href="#" data-original-title="Follow Us on Facebook" data-placement="left"></a></li>
+   <li><a title="" class="fa fa-google-plus tooltip-hover" href="#" data-original-title="Follow Us on Google Plus" data-placement="left"></a></li>
+   <li><a title="" class="fa fa-twitter tooltip-hover" href="#" data-original-title="Follow Us on Twitter" data-placement="left"></a></li>
+   <li><a title="" class="fa fa-github tooltip-hover" href="#" data-original-title="Visit our GitHub Page" data-placement="left"></a></li>
+   <li><a title="" class="fa fa-linkedin tooltip-hover" href="#" data-original-title="Follow Us on LinkedIn" data-placement="left"></a></li>
+   <li><a title="" class="fa fa-instagram tooltip-hover" href="#" data-original-title="Follow Us on Instagram" data-placement="left"></a></li>
+   <li><a title="" class="fa fa-rss tooltip-hover" href="#" data-original-title="Subscribe to Our RSS Feed" data-placement="left"></a></li>
+  </ul>
+  <!-- .social -->
+ </div>
+</div>
+
+<div class="content-col" id="page">
+
+ <div class="inner-content"> <!-- DO NOT USE .container or .container-fluid with this framework -->
+
+ 
+ <!-- _________ BEGIN .multi-item-slider // http://www.owlgraphic.com/owlcarousel/index.html#demo // lazy loading ___________ -->
+ 
+ <div class="multi-slider owl-carousel clearfix owl-theme" style="display: block; opacity: 1;">
+  <h1 class="display-text">
+<!--  <span class="line-1" style="font-size: 151.33px;">BUG<em>KILLER</em> GROUP</span> -->
+   <span class="line-1" style="font-size: 75.66px;">---------Hot now---------</span> 
+   <span class="line-2" style="font-size: 53.41px;">----最近热映：</span>
+   </h1>
+   <div class="page-header"></div>
+  <div class="owl-wrapper-outer"><div class="owl-wrapper" style="left: 0px; width: 3632px; display: block;">
+
+  <div class="owl-item" style="width: 227px;" ><figure class="item"> 
+  <img class="lazyOwl" style="display: block;" alt="Feature 1" src="https://imgsa.baidu.com/baike/c0%3Dbaike272%2C5%2C5%2C272%2C90/sign=38c984fbb91c8701c2bbbab44616f54a/63d0f703918fa0ec1e405e122c9759ee3d6ddb2d.jpg">
+  
+  <!-- <figcaption> -->
+    <!-- <a href="cinema.html"> -->
+      <form action="/film?id=Doraemon" method="post"> 
+					<input type="submit" class="btn"  value="Doraemon" /> 
+      </form> 
+    <!-- </a> -->
+  <!-- </figcaption> -->
+
+  </figure></div><div class="owl-item" style="width: 227px;"><figure class="item">
+   <img class="lazyOwl" style="display: block;"   href = "film.html"  alt="Feature 1" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496852047858&di=0888a3053bda57fd7a4b704c73b52ba1&imgtype=0&src=http%3A%2F%2Fb.hiphotos.baidu.com%2Fbaike%2Fpic%2Fitem%2F8ad4b31c8701a18b0e67aef79c2f07082938fefe.jpg">
+                                       
+  <!-- <figcaption>电影2： -->
+  <form action="/film?id=life of pi" method="post"> 
+											<input type="submit" class="btn"  value="life of pi"/> 
+								     </form>
+  <a href="http://www.flickr.com/photos/everydaylifemodern/664637664/"></a> 
+  <!-- </figcaption> -->
+  </figure></div><div class="owl-item" style="width: 227px;"><figure class="item"> <img class="lazyOwl" style="display: block;"  href = "film.html"  alt="Feature 1" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496852146408&di=4fde4df1342781cdb9256571b456e2e5&imgtype=0&src=http%3A%2F%2Fpic4.nipic.com%2F20091027%2F1988006_110115095768_2.jpg">
+   <!-- <figcaption>电影3： -->
+    <form action="/film?id=new moon" method="post"> 
+											<input type="submit" class="btn"  value="new moon"/> 
+								     </form>
+   
+   <a href="http://www.flickr.com/photos/asthmatic/1383113606/"></a>  
+    <!-- </figcaption> -->
+  </figure></div><div class="owl-item" style="width: 227px;"><figure class="item"> <img class="lazyOwl" style="display: block;"  href = "film.html"   alt="Feature 1" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496852194089&di=0da85c78ca6718a88fb2afc059ec3d4d&imgtype=0&src=http%3A%2F%2Fimg01.tooopen.com%2FProduct%2Fimages%2F2009%2F11%2F14%2F20091114105547743019.jpg">
+   <!-- <figcaption>电影4： -->
+<form action="/film?id=march of the penuins" method="post"> 
+											<input type="submit" class="btn"  value="march of the penuins"/> 
+								     </form>
+   
+   <a class="text-underline" href="http://www.flickr.com/photos/pagedooley/2033195014/"></a> 
+     <!-- </figcaption> -->
+  </figure></div><div class="owl-page"><span></span></div></div></div></div>
+  
+   
+  <!-- /.banner -->
+  
+  <div class="container-fluid" id="LG">
+	<div class="row-fluid">
+		<div class="span12">
+			<div class="page-header">
+				<h1>
+					电影影评等级排行榜<small>本周排行</small>
+				</h1>
+			</div>
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>
+							序号
+						</th>
+						<th>
+							电影名称
+						</th>
+						<th>
+							影评分数
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							1
+						</td>
+						<td>
+							Doraemon
+						</td>
+						<td>
+							8
+						</td>
+					</tr>
+					<tr class="success">
+						<td>
+							2
+						</td>
+						<td>
+							加勒比海盗5
+						</td>
+						<td>
+							7.2
+						</td>
+					</tr>
+					<tr class="error">
+						<td>
+							3
+						</td>
+						<td>
+							迷失Z城
+						</td>
+						<td>
+							6
+						</td>
+					</tr>
+					<tr class="warning">
+						<td>
+							4
+						</td>
+						<td>
+							摔跤吧！爸爸
+						</td>
+						<td>
+							5.7
+						</td>
+					</tr>
+					<tr class="info">
+						<td>
+							5
+						</td>
+						<td>
+							荡寇风云
+						</td>
+						<td>
+							5.6
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+  
+ <h2 class="h1 font-weight-thin">data update in time.</h2>
+ </div>
+ <hr class="vertical-spacer">
+  
+  <div class="row">
+   <div class="col-ms-4 col-sm-4">
+    <i class="fa fa-refresh feature-icon"></i>
+  
+    <p><a name="bottom"><a class="btn btn-default btn-sm" role="button" href="#">返回页面顶部</a></p>
+    <hr class="vertical-spacer visible-xs">
+   </div>
+   
+  <hr class="vertical-spacer">
+  <div class="row">
+   <div class="col-ms-5 col-sm-4 col-lg-5">
+    
+      <hr class="vertical-spacer visible-xs"><!-- spacing vertically when stacked-->
+
+   </div>
+   
+  </div>
+ </div>
+ <!--/inner-content -->
+ 
+</div>
+<footer class="footer footer-col clearfix">
+ <div class="footer-content-1" style="height: 279px;">
+  <div class="inner-content">
+   <h5>Contact Us：</h5>
+   
+   <p class="no-margin-bottom">
+   SYSU-SOFTWARE-ENGINEERING<br>
+   BUGKILLER-GROUP<br>
+   <br/><br/>
+   <strong>phone:</strong> <a class="text-underline" href="tel:8888888888">8888888888</a><br>
+   <strong>fax:</strong>1111111111<br>
+   <span class="overflow"><strong>email:</strong> <a class="text-underline" href="mailto:email@SYSU.com">email@SYSU.com</a></span>
+   </p>
+   
+  </div>
+  <!--/.inner-content-->
+ </div>
+ <!--/.footer-col-1 -->
+ 
+ <hr class="divider">
+ 
+ <div class="footer-content-2" style="height: 279px;">
+  <div class="inner-content">
+   <h5>send to you:</h5>
+   <p>Sign up for our newsletter. We won't share your email address.</p><br/><br/>
+   <form action="yourscript.php" method="post">
+    <div class="input-group input-group-sm footer-signup">
+     <input class="form-control" type="email" placeholder="Your@EmailAddress.com">
+     <span class="input-group-btn">
+     <button class="btn btn-primary" type="submit">Sign Up</button>
+     </span> 
+     <!--/.input-group-->
+    </div>
+   </form>
+  </div>
+  <!--/.inner-content-->
+ </div>
+ <!--/.footer-col-2 -->
+ 
+ <hr class="divider">
+ 
+ <div class="footer-content-3" style="height: 279px;">
+  <div class="inner-content">
+   <h5>developer information</h5> 
+  </div>
+  <!--/.inner-content-->
+ </div>
+ <!--/.footer-col-3 -->
+ 
+ <hr class="divider">
+ <div class="footer-content-4" style="height: 279px;">
+  <div class="inner-content">
+   <h5>friendly-website-link:</h5>
+   <ul class="article-list"> 
+    <li><a href="http://www.wandafilm.com/">wanda-cinema-website</a></li>
+    <li><a href="http://www.jycinema.com/html/default/index.html">Jinyi-Cinemas</a></li>
+    <li><a href="https://dianying.nuomi.com/">baidu-nuomi-films</a></li>
+
+   </ul>
+  </div>
+  <!--/.inner-content-->
+ </div>
+ <!--/.footer-col-4 -->
+ 
+ <hr class="divider">
+ 
+ <!--/.inner-content--> 
+ 
+</footer>
+<!--/footer-col --> 
+
+<!-- ______________ END FOOTER ______________ --> 
+
+<!-- _________ FAUX COLUMNS ________ -->
+
+<div class="faux-col faux-nav-col">
+</div>
+<div class="faux-col faux-logo-col">
+</div>
+<div class="faux-col faux-content-col">
+</div>
+<div class="faux-col faux-footer-col">
+</div>
+
+<!--to top --> 
+<a title="up" id="go-to-top" style="display: none;"> <i class="fa fa-arrow-circle-o-up"></i> </a> 
+
+<!-- this ends the site content and begins the modals for sign up and login --> 
+
+<!-- ____________ LOGIN MODAL _______________  -->
+
+<div tabindex="-1" class="modal fade user-modal" id="login-modal" style="display: none;" data-width="760">
+ 
+ <div class="modal-body">
+  <div class="row">
+   
+   
+   
+   <!-- col-ms-6 non-bootstrap column for 600px - 767px -->
+   <div class="col-sm-6 col-ms-6">
+    <h4 class="title"><span>Sign In</span></h4>
+    <form role="form" action="your-login-script-goes-here.php">
+     <div class="form-group">
+      <input class="form-control" type="email" placeholder="Enter email">
+     </div>
+     <div class="form-group">
+      <input class="form-control" type="password" placeholder="Password">
+     </div>
+     <div class="form-group checkbox small">
+      <label>
+       <input type="checkbox">
+       Remember Me </label>
+     </div>
+     <p class="text-center">
+      <button class="btn btn-default btn-custom" type="submit"><i class="fa fa-lock"></i> Sign in</button>
+     </p>
+    </form>
+   </div>
+   <!-- /col-sm-6 col-ms-6-->
+   
+  </div>
+  <!-- /.row-->
+  
+    <p class="text-center"><a class="text-underline" href="your-link-here.html">Forgot your password?</a> <br>
+     Don't have an account yet? <a class="text-underline" href="#signup-modal" data-toggle="modal" data-dismiss="modal">Sign up</a> </p>
+  
+ </div>
+ <!-- /.modal-body-->
+</div>
+<!-- /.modal #login-modal --> 
+
+<!-- ____________ SIGNUP MODAL _______________  -->
+
+<div tabindex="-1" class="modal fade user-modal" id="signup-modal" style="display: none;" data-width="760">
+ <div class="modal-header">
+  <button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+ </div>
+ <div class="modal-body">
+  <div class="row">
+   
+   <!-- col-ms-6 non-bootstrap column for 600px - 767px -->
+   <div class="col-sm-6  col-ms-6">
+    <h4 class="title"><span>Sign Up with...</span></h4>
+    <ul class="list-unstyled social-user">
+     <li><a title="Signup with Facebook" class="facebook" href="#"><i class="fa fa-facebook"></i><span>Signup with Facebook</span></a></li>
+     <li><a title="Signup with Google Plus" class="google" href="#"><i class="fa fa-google-plus"></i><span>Signup with Google</span></a></li>
+     <li><a title="Signup with Twitter" class="twitter" href="#"><i class="fa fa-twitter"></i><span>Signup with Twitter</span></a></li>
+     <li><a title="Signup with Wordpress" class="wordpress" href="#"><i class="fa fa-wordpress"></i><span>Signup with Wordpress</span></a></li>
+    </ul>
+    <!-- /.social-user -->
+   </div>
+   <!-- /col-sm-6 col-ms-6--> 
+   
+   <!-- col-ms-6 non-bootstrap column for 600px - 767px -->
+   <div class="col-sm-6 col-ms-6">
+    <h4 class="title"><span>Sign Up</span></h4>
+    <form role="form" action="your-registrtation-script-goes-here.php">
+     <div class="form-group">
+      <input class="form-control" type="email" placeholder="Enter email">
+     </div>
+     <div class="form-group">
+      <input class="form-control" type="password" placeholder="Password">
+     </div>
+     <p class="text-center">
+      <button class="btn btn-default btn-custom" type="submit"><i class="fa fa-lock"></i> Register</button>
+     </p>
+    </form>
+   </div>
+   <!-- /col-sm-6 col-ms-6-->
+   
+  </div>
+  <!-- /.row-->
+  
+      <p class="text-center">Already have an account? <a class="text-underline" href="#login-modal" data-toggle="modal" data-dismiss="modal">Login</a></p>
+
+  
+ </div>
+ <!-- /.modal-body-->
+</div>
+<!-- /.modal #signup-modal --> 
+
+
+<!-- _________ FOOTER SCRIPTS ________ --> 
+
+<script src="assets/js/bootstrap.min.js"></script> 
+<script src="assets/js/jquery.sidewaze_base.js"></script> 
+
+<!-- Way Better Bootstrap Modals INSTRUCTIONS: https://github.com/jschr/bootstrap-modal/ --> 
+<!-- DEMO:: http://jschr.github.io/bootstrap-modal/bs3.html --> 
+<script src="assets/js/bootstrap-modalmanager.js"></script> 
+<script src="assets/js/bootstrap-modal.js"></script> 
+
+<!-- Responsive Carousel LEARN IT HERE: http://www.owlgraphic.com/owlcarousel/demos/custom.html--> 
+<script src="assets/owl-carousel/owl.carousel.min.js"></script> 
+<script>
+     $(document).ready(function() {
+        $(".multi-slider").owlCarousel({
+        lazyLoad : true,
+        navigation : false,
+        pagination: true,
+        items : 4, 
+        itemsDesktop : [1400,4],
+        itemsDesktopSmall : [900,3], 
+        itemsTablet: [600,2], 
+        itemsMobile : [320,1]
+    });
+ });
+</script>
+
+<script src="assets/switcher/switcher.js"></script>  
+</body></html>
