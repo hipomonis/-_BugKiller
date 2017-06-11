@@ -1,0 +1,106 @@
+
+#switcher-wrapper, .ie8 #switcher-wrapper, .touch #switcher-wrapper {display: none!important;}
+
+
+@media only screen and (min-width:1020px) and (min-height:550px) {
+
+	#switcher-wrapper, #switcher-wrapper h3 { color: #fff; font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace!important; font-weight: 400!important; }
+	#switcher, #switcher-wrapper .toggle { background: #000 url(stripe.png); background-attachment: fixed; color: #fff; }
+	#switcher-wrapper { display: block!important; color: #fff;}
+	#switcher h3 { margin: 0 0 10px 0; text-transform: uppercase; font-size: 12px; color: #fff; }
+	.button { padding: 5px 8px 3px; border: 2px solid #444; font-size: 12px; line-height: 1; }
+	.button { color: #fff; text-decoration: none; border-radius: 3px; }
+	.button:hover, .button:focus, .button:active { color: #fff; text-decoration: none; background: #333; }
+	#switcher section { margin-bottom: 15px }
+	#switcher { position: absolute; top: 220px; left: 0; width: 300px; z-index: 100; padding: 0 10px; font-size: 90%; border: 1px solid rgba(0,0,0,.10); border-left: 0px; overflow-x: hidden; line-height: 1.5; border-radius: 0 0 5px 0; box-shadow: 0 4px 2px -2px rgba(0,0,0,.20); }
+	#switcher-wrapper { position: fixed; left: -302px; top: 0; z-index: 1000; overflow: visible; transition: all 0.2s ease-in-out; }
+	.open-switcher #switcher-wrapper { left: 0 }
+	#switcher section { clear: both; margin: 10px 0 20px; }
+	#switcher-wrapper .toggle {color:#ffd535; cursor: pointer; width: 40px; height: 40px; position: absolute; z-index: 501; top: 220px; right: -339px; margin: 0; text-align: center; border: 1px solid rgba(0,0,0,.10); border-left: 0px; border-radius: 0 5px 5px 0; box-shadow: 0 4px 2px -2px rgba(0,0,0,.20); }
+	#switcher-wrapper .toggle i { font-size: 20px; position: absolute; display: block; width: 38px; height: 38px; line-height: 38px; text-align: center; left: 2px; top: 0; margin: 0; }
+	.open-switcher #switcher-wrapper i:before { content: "\f00d"; position: relative; }
+	
+	/* -------------- COLORS --------------  */
+	#switcher .colors { margin-bottom: 10px;position: relative; }
+	#switcher .colors a { float: left; display: block; width: 60px; height: 60px; margin: 0 5px 5px 0; position: relative; overflow: hidden; border: 1px solid #777; }
+	#switcher .colors a.active { border: 3px solid #f65126 }
+	#switcher .colors a span { display: block; height: 100%; width: 50%; position: absolute; top: 0; left: 0; }
+	#switcher .colors a span:last-child { left: 50% }
+	
+	/* -------------- COLOR SCHEMES --------------  */
+	
+	/* --- base */
+	#switcher #base span:first-child {
+	    background: #fff
+	}
+	#switcher #base span:last-child {
+	    background: #fff
+	}
+	
+	/* ---- soft-gray */
+	#switcher #soft-gray span:first-child {
+	    background: #fff;
+		border-right: 4px solid #eee;
+	}
+	#switcher #soft-gray span:last-child {
+	    background: #f7f7f7;
+		border-left: 4px solid #eee;
+	}
+	
+	/* ---- stone */
+	#switcher #stone span:first-child {
+	    background: #f7f6ef;
+		border-right: 4px solid #ded9bc;
+	}
+	#switcher #stone span:last-child {
+	    background: #f3f1e7;
+		border-left: 4px solid #ded9bc;
+	}
+	/* ---- blue */
+	#switcher #blue span:first-child {
+	    background: #4ea5ce;
+	}
+	#switcher #blue span:last-child {
+	    background: #fff;
+	}
+	
+	/* ---- teal */
+	#switcher #teal span:first-child {
+	    background: #42abb7;
+	}
+	#switcher #teal span:last-child {
+	    background: #fff;
+	}
+		
+	/* ---- mustard-gray */
+	#switcher #mustard-gray span:first-child {
+	    background: #444;
+		border-right: 10px solid #dec100;
+	}
+	#switcher #mustard-gray span:last-child {
+	    background: #fff;
+		border-left: 10px solid #dec100;
+	}
+	
+	/* ---- salmon-gray */
+	#switcher #salmon-gray span:first-child {
+	    background: #444;
+		border-right: 10px solid #fc7a6a;
+	}
+	#switcher #salmon-gray span:last-child {
+	    background: #fff;
+		border-left: 10px solid #fc7a6a;
+	}
+
+
+	/* ---- green-gray */
+	#switcher #green-gray span:first-child {
+	    background: #444;
+		border-right: 10px solid #a4c700;
+	}
+	#switcher #green-gray span:last-child {
+	    background: #fff;
+		border-left: 10px solid #a4c700;
+	}
+	
+}
