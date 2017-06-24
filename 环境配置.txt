@@ -1,0 +1,2 @@
+G:\nodejs_anzhuang\nodejs\;
+C:\Program Files\MySQL\MySQL Utilities 1.6\;
