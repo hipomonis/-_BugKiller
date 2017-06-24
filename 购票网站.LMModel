@@ -1,0 +1,237 @@
+<LMModel Align="68" DisplayFlags="0" LineColor="#000000" FillStyle="none" LineWidth="1" FontUnderline="0" FillColor="#ffffff" LineStyle="Solid" FontColor="#000000" FontPointSize="9" BackgroundColor="#ffffff" FontBold="0" BackgroundImagePlacement="0" FontItalic="0" ModificationDate="2017-06-18T23:19:31" Author="Lee" TextFlag="2048" CreationDate="2017-06-18T23:13:01" BackgroundType="0" FontStrikeOut="0" Name="project" BackgroundStyle="none" Version="2.2" NextOID="37" FontFamily="Adobe Devanagari" ><![CDATA[????]]><LMEntityNormal width="129" x="595" TextField="2" Align="68" y="81" LineColor="#000000" FillStyle="Solid" LineWidth="1" Generate="1" FontUnderline="0" FillColor="#9932cc" LineStyle="Solid" FontColor="#000000" FontPointSize="9" OID="2" height="127" DefaultsLoaded="1" FontBold="0" FontItalic="0" TextFlag="2048" FontStrikeOut="0" Name="film" NextOID="8" FontFamily="Adobe Devanagari" >
+  <sink x="0" y="0.480315" OID="7" />
+  <LMAttribute OID="2" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="10" Name="fname" />
+  </LMAttribute>
+  <LMAttribute OID="3" Identifier="1" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="5" Name="fid" />
+  </LMAttribute>
+  <LMAttribute OID="4" >
+   <Uses Class="LMDataItem" Path="6" Name="description" />
+  </LMAttribute>
+  <LMAttribute OID="5" >
+   <Uses Class="LMDataItem" Path="7" Name="length" />
+  </LMAttribute>
+  <LMAttribute OID="6" >
+   <Uses Class="LMDataItem" Path="8" Name="releaseDate" />
+  </LMAttribute>
+ </LMEntityNormal>
+ <LMEntityNormal width="129" x="71" TextField="2" Align="68" y="258" LineColor="#000000" FillStyle="Solid" LineWidth="1" Generate="1" FontUnderline="0" FillColor="#9932cc" LineStyle="Solid" FontColor="#000000" FontPointSize="9" OID="14" height="89" DefaultsLoaded="1" FontBold="0" FontItalic="0" TextFlag="2048" FontStrikeOut="0" Name="room" NextOID="7" FontFamily="Adobe Devanagari" >
+  <sink x="0.48062" y="0.011236" OID="5" />
+  <sink x="0.472868" y="0.977528" OID="4" />
+  <LMAttribute OID="6" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="35" Name="roonname" />
+  </LMAttribute>
+  <LMAttribute OID="2" Identifier="1" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="15" Name="rid" />
+  </LMAttribute>
+  <LMAttribute OID="3" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="11" Name="cinid" />
+  </LMAttribute>
+ </LMEntityNormal>
+ <LMEntityNormal width="131" x="72" TextField="2" Align="68" y="452" LineColor="#000000" FillStyle="Solid" LineWidth="1" Generate="1" FontUnderline="0" FillColor="#9932cc" LineStyle="Solid" FontColor="#000000" FontPointSize="9" OID="16" height="118" DefaultsLoaded="1" FontBold="0" FontItalic="0" TextFlag="2048" FontStrikeOut="0" Name="position" NextOID="7" FontFamily="Adobe Devanagari" >
+  <sink x="0.465649" y="0.0254237" OID="5" />
+  <sink x="0.984733" y="0.525424" OID="6" />
+  <LMAttribute OID="1" Identifier="1" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="17" Name="pid" />
+  </LMAttribute>
+  <LMAttribute OID="2" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="18" Name="row" />
+  </LMAttribute>
+  <LMAttribute OID="3" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="19" Name="col" />
+  </LMAttribute>
+  <LMAttribute OID="4" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="15" Name="rid" />
+  </LMAttribute>
+ </LMEntityNormal>
+ <LMRelationship BeginCardinality="0,n" TextField="2" Align="68" LineColor="#000000" FillStyle="Solid" LineWidth="1" EndArrowDirection="1072693248" EndArrowFlags="6" Generate="1" EndArrowType="3" FontUnderline="0" FillColor="#ffffff" LineStyle="Solid" FontColor="#000000" FontPointSize="9" OID="21" BeginArrowDirection="0" DefaultsLoaded="1" BeginArrowType="3" FontBold="0" Dominant="1" FontItalic="0" EndTruncate="1" TextFlag="2048" FontStrikeOut="0" Name="screening" EndCardinality="0,1" BeginTruncate="1" BeginArrowFlags="5" NextOID="6" FontFamily="Adobe Devanagari" >
+  <point x="595" y="142" OID="1" SinkObjectOID="2" SinkOID="7" />
+  <point x="179" y="142" OID="2" SinkObjectOID="36" SinkOID="1" />
+  <TextHandle x="0.45" y="0.5" OID="3" />
+  <BeginRoleHandle x="10" y="10" OID="4" />
+  <EndRoleHandle x="10" y="10" OID="5" />
+ </LMRelationship>
+ <LMRelationship BeginCardinality="0,n" TextField="2" Align="68" LineColor="#000000" FillStyle="Solid" LineWidth="1" EndArrowDirection="1072693248" EndArrowFlags="6" Generate="1" EndArrowType="3" FontUnderline="0" FillColor="#ffffff" LineStyle="Solid" FontColor="#000000" FontPointSize="9" OID="22" BeginArrowDirection="0" DefaultsLoaded="1" BeginArrowType="3" FontBold="0" Dominant="1" FontItalic="0" EndTruncate="1" TextFlag="2048" FontStrikeOut="0" Name="cinema-have-room" EndCardinality="0,1" BeginTruncate="1" BeginArrowFlags="7" NextOID="6" Dependent="0" FontFamily="Adobe Devanagari" >
+  <point x="133" y="259" OID="1" SinkObjectOID="14" SinkOID="5" />
+  <point x="131" y="178" OID="2" SinkObjectOID="36" SinkOID="2" />
+  <TextHandle x="0.45" y="0.5" OID="3" />
+  <BeginRoleHandle x="10" y="10" OID="4" />
+  <EndRoleHandle x="10" y="10" OID="5" />
+ </LMRelationship>
+ <LMRelationship BeginCardinality="0,n" TextField="2" Align="68" LineColor="#000000" FillStyle="Solid" LineWidth="1" EndArrowDirection="1072693248" EndArrowFlags="6" Generate="1" EndArrowType="3" FontUnderline="0" FillColor="#ffffff" LineStyle="Solid" FontColor="#000000" FontPointSize="9" OID="23" BeginArrowDirection="0" DefaultsLoaded="1" BeginArrowType="3" FontBold="0" Dominant="1" FontItalic="0" EndTruncate="1" TextFlag="2048" FontStrikeOut="0" Name="room-have-position" EndCardinality="0,1" BeginTruncate="1" BeginArrowFlags="7" NextOID="6" Dependent="0" FontFamily="Adobe Devanagari" >
+  <point x="133" y="455" OID="1" SinkObjectOID="16" SinkOID="5" />
+  <point x="132" y="345" OID="2" SinkObjectOID="14" SinkOID="4" />
+  <TextHandle x="0.45" y="0.5" OID="3" />
+  <BeginRoleHandle x="10" y="10" OID="4" />
+  <EndRoleHandle x="10" y="10" OID="5" />
+ </LMRelationship>
+ <LMEntityNormal width="167" x="446" TextField="2" Align="68" y="451" LineColor="#000000" FillStyle="Solid" LineWidth="1" Generate="1" FontUnderline="0" FillColor="#9932cc" LineStyle="Solid" FontColor="#000000" FontPointSize="9" OID="24" height="104" DefaultsLoaded="1" FontBold="0" FontItalic="0" TextFlag="2048" FontStrikeOut="0" Name="order" NextOID="6" FontFamily="Adobe Devanagari" >
+  <sink x="0.00598802" y="0.615385" OID="5" />
+  <sink x="0.51497" y="0" OID="4" />
+  <LMAttribute OID="1" Identifier="1" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="25" Name="oid" />
+  </LMAttribute>
+  <LMAttribute OID="2" >
+   <Uses Class="LMDataItem" Path="11" Name="cinid" />
+  </LMAttribute>
+  <LMAttribute OID="3" >
+   <Uses Class="LMDataItem" Path="27" Name="" />
+  </LMAttribute>
+ </LMEntityNormal>
+ <LMRelationship BeginCardinality="0,n" TextField="2" Align="68" LineColor="#000000" FillStyle="Solid" LineWidth="1" EndArrowDirection="0" EndArrowFlags="4" Generate="1" EndArrowType="3" FontUnderline="0" FillColor="#ffffff" LineStyle="Solid" FontColor="#000000" FontPointSize="9" OID="28" BeginArrowDirection="0" DefaultsLoaded="1" BeginArrowType="3" FontBold="0" Dominant="1" FontItalic="0" EndTruncate="1" TextFlag="2048" FontStrikeOut="0" Name="order-reserve-position" EndCardinality="0,1" BeginTruncate="1" BeginArrowFlags="5" NextOID="6" FontFamily="Adobe Devanagari" >
+  <point x="201" y="514" OID="1" SinkObjectOID="16" SinkOID="6" />
+  <point x="447" y="515" OID="2" SinkObjectOID="24" SinkOID="5" />
+  <TextHandle x="0.45" y="0.5" OID="3" />
+  <BeginRoleHandle x="10" y="10" OID="4" />
+  <EndRoleHandle x="10" y="10" OID="5" />
+ </LMRelationship>
+ <LMEntityNormal width="162" x="452" TextField="2" Align="68" y="266" LineColor="#000000" FillStyle="Solid" LineWidth="1" Generate="1" FontUnderline="0" FillColor="#9932cc" LineStyle="Solid" FontColor="#000000" FontPointSize="9" OID="29" height="89" DefaultsLoaded="1" FontBold="0" FontItalic="0" TextFlag="2048" FontStrikeOut="0" Name="customer" NextOID="5" FontFamily="Adobe Devanagari" >
+  <sink x="0.5" y="0.966292" OID="1" />
+  <LMAttribute OID="2" Identifier="1" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="30" Name="cusid" />
+  </LMAttribute>
+  <LMAttribute OID="3" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="31" Name="userName" />
+  </LMAttribute>
+  <LMAttribute OID="4" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="32" Name="password" />
+  </LMAttribute>
+ </LMEntityNormal>
+ <LMRelationship BeginCardinality="0,n" TextField="2" Align="68" LineColor="#000000" FillStyle="Solid" LineWidth="1" EndArrowDirection="1072693248" EndArrowFlags="4" Generate="1" EndArrowType="3" FontUnderline="0" FillColor="#ffffff" LineStyle="Solid" FontColor="#000000" FontPointSize="9" OID="33" BeginArrowDirection="0" DefaultsLoaded="1" BeginArrowType="3" FontBold="0" Dominant="1" FontItalic="0" EndTruncate="1" TextFlag="2048" FontStrikeOut="0" Name="customer-own-order" EndCardinality="0,1" BeginTruncate="1" BeginArrowFlags="7" NextOID="6" Dependent="0" FontFamily="Adobe Devanagari" >
+  <point x="532" y="451" OID="1" SinkObjectOID="24" SinkOID="4" />
+  <point x="533" y="352" OID="2" SinkObjectOID="29" SinkOID="1" />
+  <TextHandle x="0.45" y="0.5" OID="3" />
+  <BeginRoleHandle x="10" y="10" OID="4" />
+  <EndRoleHandle x="10" y="10" OID="5" />
+ </LMRelationship>
+ <LMEntityNormal width="104" x="78" TextField="2" Align="68" y="81" LineColor="#000000" FillStyle="Solid" LineWidth="1" Generate="1" FontUnderline="0" FillColor="#9932cc" LineStyle="Solid" FontColor="#000000" FontPointSize="9" OID="36" height="105" DefaultsLoaded="1" FontBold="0" FontItalic="0" TextFlag="2048" FontStrikeOut="0" Name="cinema" NextOID="7" FontFamily="Adobe Devanagari" >
+  <sink x="0.971154" y="0.580952" OID="1" />
+  <sink x="0.509615" y="0.92381" OID="2" />
+  <LMAttribute OID="3" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="34" Name="cinname" />
+  </LMAttribute>
+  <LMAttribute OID="4" Identifier="1" Mandatory="1" >
+   <Uses Class="LMDataItem" Path="11" Name="cinid" />
+  </LMAttribute>
+  <LMAttribute OID="5" >
+   <Uses Class="LMDataItem" Path="12" Name="address" />
+  </LMAttribute>
+  <LMAttribute OID="6" >
+   <Uses Class="LMDataItem" Path="13" Name="phoneNum" />
+  </LMAttribute>
+ </LMEntityNormal>
+ <Validation>
+  <Rule Name="Model name missing" Value="Error" />
+  <Rule Name="Model comment missing" Value="Warning" />
+  <Rule Name="Model description missing" Value="Information" />
+  <Rule Name="Model author missing" Value="Warning" />
+  <Rule Name="Rule name missing" Value="Error" />
+  <Rule Name="Rule code missing" Value="Warning" />
+  <Rule Name="Rule comment missing" Value="Warning" />
+  <Rule Name="Rule description missing" Value="Information" />
+  <Rule Name="Rule name duplicate" Value="Error" />
+  <Rule Name="Rule code duplicate" Value="Error" />
+  <Rule Name="Rule not used" Value="Warning" />
+  <Rule Name="Domain name missing" Value="Error" />
+  <Rule Name="Domain code missing" Value="Warning" />
+  <Rule Name="Domain comment missing" Value="Warning" />
+  <Rule Name="Domain description missing" Value="Information" />
+  <Rule Name="Domain name duplicate" Value="Error" />
+  <Rule Name="Domain code duplicate" Value="Error" />
+  <Rule Name="Domain type missing" Value="Error" />
+  <Rule Name="Domain type unknown" Value="Error" />
+  <Rule Name="Domain not used" Value="Warning" />
+  <Rule Name="Data Item name missing" Value="Error" />
+  <Rule Name="Data Item code missing" Value="Warning" />
+  <Rule Name="Data Item comment missing" Value="Warning" />
+  <Rule Name="Data Item description missing" Value="Information" />
+  <Rule Name="Data Item name duplicate" Value="Error" />
+  <Rule Name="Data Item code duplicate" Value="Error" />
+  <Rule Name="Data Item type missing" Value="Error" />
+  <Rule Name="Data Item type unknown" Value="Error" />
+  <Rule Name="Data Item not used" Value="Warning" />
+  <Rule Name="Entity name missing" Value="Error" />
+  <Rule Name="Entity code missing" Value="Warning" />
+  <Rule Name="Entity comment missing" Value="Warning" />
+  <Rule Name="Entity description missing" Value="Information" />
+  <Rule Name="Entity name duplicate" Value="Error" />
+  <Rule Name="Entity code duplicate" Value="Error" />
+  <Rule Name="Entity attribute missing" Value="Error" />
+  <Rule Name="Entity primary identifier missing" Value="Warning" />
+  <Rule Name="Association name missing" Value="Error" />
+  <Rule Name="Association code missing" Value="Warning" />
+  <Rule Name="Association comment missing" Value="Warning" />
+  <Rule Name="Association description missing" Value="Information" />
+  <Rule Name="Association name duplicate" Value="Error" />
+  <Rule Name="Association code duplicate" Value="Error" />
+  <Rule Name="Association link missing" Value="Error" />
+  <Rule Name="Inheritance name missing" Value="Error" />
+  <Rule Name="Inheritance code missing" Value="Warning" />
+  <Rule Name="Inheritance comment missing" Value="Warning" />
+  <Rule Name="Inheritance description missing" Value="Information" />
+  <Rule Name="Inheritance name duplicate" Value="Warning" />
+  <Rule Name="Inheritance code duplicate" Value="Warning" />
+  <Rule Name="Inheritance link missing" Value="Error" />
+  <Rule Name="Relationship name missing" Value="Error" />
+  <Rule Name="Relationship code missing" Value="Warning" />
+  <Rule Name="Relationship comment missing" Value="Warning" />
+  <Rule Name="Relationship description missing" Value="Information" />
+  <Rule Name="Relationship name duplicate" Value="Warning" />
+  <Rule Name="Relationship code duplicate" Value="Warning" />
+  <Rule Name="Relationship child entity missing" Value="Error" />
+  <Rule Name="Relationship parent entity missing" Value="Error" />
+  <Rule Name="Association Link name missing" Value="Error" />
+  <Rule Name="Association Link code missing" Value="Warning" />
+  <Rule Name="Association Link comment missing" Value="Warning" />
+  <Rule Name="Association Link description missing" Value="Information" />
+  <Rule Name="Association Link name duplicate" Value="Warning" />
+  <Rule Name="Association Link code duplicate" Value="Warning" />
+  <Rule Name="Association Link entity missing" Value="Error" />
+  <Rule Name="Association Link association missing" Value="Error" />
+  <Rule Name="Inheritance Link name missing" Value="" />
+  <Rule Name="Inheritance Link code missing" Value="" />
+  <Rule Name="Inheritance Link comment missing" Value="" />
+  <Rule Name="Inheritance Link description missing" Value="" />
+  <Rule Name="Inheritance Link name duplicate" Value="" />
+  <Rule Name="Inheritance Link code duplicate" Value="" />
+  <Rule Name="Inheritance Link entity missing" Value="Error" />
+  <Rule Name="Inheritance Link inheritance missing" Value="Error" />
+  <Rule Name="Attribute name missing" Value="Error" />
+  <Rule Name="Attribute code missing" Value="Warning" />
+  <Rule Name="Attribute comment missing" Value="Warning" />
+  <Rule Name="Attribute description missing" Value="Information" />
+  <Rule Name="Attribute is indentifier but not mandatory" Value="Error" />
+  <Rule Name="Attribute name duplicate" Value="Error" />
+  <Rule Name="Attribute code duplicate" Value="Error" />
+  <Rule Name="Identifier name missing" Value="Error" />
+  <Rule Name="Identifier code missing" Value="Warning" />
+  <Rule Name="Identifier comment missing" Value="Warning" />
+  <Rule Name="Identifier description missing" Value="Information" />
+  <Rule Name="Identifier name duplicate" Value="Error" />
+  <Rule Name="Identifier code duplicate" Value="Error" />
+  <Rule Name="Identifier attribute missing" Value="Error" />
+ </Validation>
+ <LMDataItem OID="3" Name="name" />
+ <LMDataItem Length="20" DataType="VARCHAR" OID="4" Name="name" />
+ <LMDataItem Length="100" DataType="INTEGER" OID="5" Name="fid" />
+ <LMDataItem Length="200" DataType="VARCHAR" OID="6" Name="description" />
+ <LMDataItem DataType="INTEGER" OID="7" Name="length" />
+ <LMDataItem DataType="DATE" OID="8" Name="releaseDate" />
+ <LMDataItem Length="20" DataType="VARCHAR" OID="10" Name="fname" />
+ <LMDataItem DataType="INTEGER" OID="11" Name="cinid" />
+ <LMDataItem Length="200" DataType="VARCHAR" OID="12" Name="address" />
+ <LMDataItem Length="15" DataType="CHAR" OID="13" Name="phoneNum" />
+ <LMDataItem DataType="INTEGER" OID="15" Name="rid" />
+ <LMDataItem DataType="INTEGER" OID="17" Name="pid" />
+ <LMDataItem DataType="SMALLINT" OID="18" Name="row" />
+ <LMDataItem DataType="SMALLINT" OID="19" Name="col" />
+ <LMDataItem DataType="INTEGER" OID="25" Name="oid" ><![CDATA[????]]></LMDataItem>
+ <LMDataItem OID="26" />
+ <LMDataItem OID="27" />
+ <LMDataItem DataType="INTEGER" OID="30" Name="cusid" />
+ <LMDataItem Length="20" DataType="VARCHAR" OID="31" Name="userName" />
+ <LMDataItem Length="20" DataType="VARCHAR" OID="32" Name="password" />
+ <LMDataItem Length="20" DataType="VARCHAR" OID="34" Name="cinname" />
+ <LMDataItem Length="20" DataType="VARCHAR" OID="35" Name="roonname" />
+</LMModel>
