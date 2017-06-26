@@ -4,26 +4,35 @@
   
   服务器为nodejs，由许朴搭建
   
-  
-  mysql因为使用图形化界面，没有太多特别的代码，因此不上传了
-  
+  服务器用到的模块包已经通过npm命令安装在node_model压缩包中，下载解压在项目代码根目录下即可用
+  
   
  
  系统项目代码使用方法：
  
  
-  1.安装nodejs，安装mysql，并分别配置好环境变量
+  1.安装nodejs，安装mysql，并分别配置好环境变量，例如：
   
-  
+
+      服务器：node-v6.10.3-x64
+      windows下环境变量配置：（例如）
+      G:\nodejs_anzhuang\nodejs\;
+
+      数据库：mysql-5.7.17
+      windows下环境变量配置：（例如）
+      C:\Program Files\MySQL\MySQL Utilities 1.6\;
+
+
   2.在mysql中新建数据库，具体信息为：
                         host     : 'localhost',       
                         user     : 'root',              
                         password : 'a123456',       
                         port: '3306',                   
                         database: 'is_database', 
+                        
      在新建的is_database数据库中新建表：reservation(id,name,cinema,film)
                                     id字段数据类型为int，其他字段数据类型为varchar(45)（字符串）
-   确认数据库在运行
+   确认数据库正在运行
    
    
   3.在项目根目录下按shift+鼠标右键，在此处打开cmd命令行，执行node app.js
